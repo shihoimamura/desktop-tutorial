@@ -1,0 +1,190 @@
+Started GET "/" for ::1 at 2023-01-21 13:43:46 +0900
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PropertiesController#index as HTML
+  Rendering properties/index.html.erb within layouts/application
+  [1m[36mProperty Load (0.3ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ app/views/properties/index.html.erb:18
+  Rendered properties/index.html.erb within layouts/application (Duration: 13.1ms | Allocations: 11386)
+Completed 200 OK in 60ms (Views: 51.2ms | ActiveRecord: 0.6ms | Allocations: 32423)
+
+
+Started GET "/properties/1" for ::1 at 2023-01-21 13:43:54 +0900
+Processing by PropertiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProperty Load (0.3ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:64:in `set_property'
+  Rendering properties/show.html.erb within layouts/application
+  [1m[36mStation Load (0.1ms)[0m  [1m[34mSELECT "stations".* FROM "stations" WHERE "stations"."property_id" = ?[0m  [["property_id", 1]]
+  ↳ app/views/properties/show.html.erb:30:in `each_with_index'
+  Rendered properties/show.html.erb within layouts/application (Duration: 21.2ms | Allocations: 7779)
+Completed 200 OK in 31ms (Views: 23.2ms | ActiveRecord: 0.5ms | Allocations: 11809)
+
+
+Started GET "/properties/7" for ::1 at 2023-01-21 13:44:05 +0900
+Processing by PropertiesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:64:in `set_property'
+  Rendering properties/show.html.erb within layouts/application
+  [1m[36mStation Load (0.2ms)[0m  [1m[34mSELECT "stations".* FROM "stations" WHERE "stations"."property_id" = ?[0m  [["property_id", 7]]
+  ↳ app/views/properties/show.html.erb:30:in `each_with_index'
+  Rendered properties/show.html.erb within layouts/application (Duration: 16.8ms | Allocations: 6102)
+Completed 200 OK in 21ms (Views: 18.1ms | ActiveRecord: 0.8ms | Allocations: 8842)
+
+
+Started GET "/properties/7/edit" for ::1 at 2023-01-21 13:44:10 +0900
+Processing by PropertiesController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:64:in `set_property'
+  Rendering properties/edit.html.erb within layouts/application
+  [1m[36mStation Load (0.2ms)[0m  [1m[34mSELECT "stations".* FROM "stations" WHERE "stations"."property_id" = ?[0m  [["property_id", 7]]
+  ↳ app/views/properties/_form.html.erb:42
+  Rendered properties/_form.html.erb (Duration: 18.9ms | Allocations: 5369)
+  Rendered properties/edit.html.erb within layouts/application (Duration: 21.2ms | Allocations: 5818)
+Completed 200 OK in 26ms (Views: 22.6ms | ActiveRecord: 0.4ms | Allocations: 8748)
+
+
+Started GET "/properties/7" for ::1 at 2023-01-21 13:44:24 +0900
+Processing by PropertiesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:64:in `set_property'
+  Rendering properties/show.html.erb within layouts/application
+  [1m[36mStation Load (0.2ms)[0m  [1m[34mSELECT "stations".* FROM "stations" WHERE "stations"."property_id" = ?[0m  [["property_id", 7]]
+  ↳ app/views/properties/show.html.erb:30:in `each_with_index'
+  Rendered properties/show.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1123)
+Completed 200 OK in 11ms (Views: 7.7ms | ActiveRecord: 0.4ms | Allocations: 3768)
+
+
+Started GET "/properties/new" for ::1 at 2023-01-21 13:45:05 +0900
+Processing by PropertiesController#new as HTML
+  Rendering properties/new.html.erb within layouts/application
+  Rendered properties/_form.html.erb (Duration: 2.1ms | Allocations: 1355)
+  Rendered properties/new.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1576)
+Completed 200 OK in 19ms (Views: 6.8ms | ActiveRecord: 0.0ms | Allocations: 6475)
+
+
+Started POST "/properties" for ::1 at 2023-01-21 13:45:42 +0900
+Processing by PropertiesController#create as HTML
+  Parameters: {"authenticity_token"=>"F1/NmNtUmuEcyrJOngWrZzpjwxrAQXEbF/TOIKpOeRSD5WigA4mtmcQcalzOXSZsmgCHU5SnFfOVC3EQRN6J1g==", "property"=>{"name"=>"あいう", "rent"=>"3", "address"=>"東京", "old"=>"2", "remark"=>"いい部屋だよ", "stations_attributes"=>{"0"=>{"line_name"=>"JR", "name"=>"東京", "minute"=>"2"}, "1"=>{"line_name"=>"", "name"=>"", "minute"=>""}}}, "commit"=>"登録する"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/properties_controller.rb:29:in `block in create'
+  [1m[36mProperty Create (0.5ms)[0m  [1m[32mINSERT INTO "properties" ("name", "rent", "address", "old", "remark", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "あいう"], ["rent", 3], ["address", "東京"], ["old", 2], ["remark", "いい部屋だよ"], ["created_at", "2023-01-21 04:45:42.557308"], ["updated_at", "2023-01-21 04:45:42.557308"]]
+  ↳ app/controllers/properties_controller.rb:29:in `block in create'
+  [1m[36mStation Create (0.1ms)[0m  [1m[32mINSERT INTO "stations" ("line_name", "name", "minute", "property_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["line_name", "JR"], ["name", "東京"], ["minute", 2], ["property_id", 8], ["created_at", "2023-01-21 04:45:42.559303"], ["updated_at", "2023-01-21 04:45:42.559303"]]
+  ↳ app/controllers/properties_controller.rb:29:in `block in create'
+  [1m[36mStation Create (0.1ms)[0m  [1m[32mINSERT INTO "stations" ("line_name", "name", "property_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["line_name", ""], ["name", ""], ["property_id", 8], ["created_at", "2023-01-21 04:45:42.564727"], ["updated_at", "2023-01-21 04:45:42.564727"]]
+  ↳ app/controllers/properties_controller.rb:29:in `block in create'
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/properties_controller.rb:29:in `block in create'
+Redirected to http://localhost:3000/properties/8
+Completed 302 Found in 12ms (ActiveRecord: 1.3ms | Allocations: 7488)
+
+
+Started GET "/properties/8" for ::1 at 2023-01-21 13:45:42 +0900
+Processing by PropertiesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mProperty Load (0.1ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:64:in `set_property'
+  Rendering properties/show.html.erb within layouts/application
+  [1m[36mStation Load (0.0ms)[0m  [1m[34mSELECT "stations".* FROM "stations" WHERE "stations"."property_id" = ?[0m  [["property_id", 8]]
+  ↳ app/views/properties/show.html.erb:30:in `each_with_index'
+  Rendered properties/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 982)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.1ms | Allocations: 3642)
+
+
+Started GET "/properties" for ::1 at 2023-01-21 13:46:06 +0900
+Processing by PropertiesController#index as HTML
+  Rendering properties/index.html.erb within layouts/application
+  [1m[36mProperty Load (0.3ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ app/views/properties/index.html.erb:18
+  Rendered properties/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1871)
+Completed 200 OK in 10ms (Views: 8.4ms | ActiveRecord: 0.3ms | Allocations: 3812)
+
+
+Started GET "/properties/8" for ::1 at 2023-01-21 13:46:11 +0900
+Processing by PropertiesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:64:in `set_property'
+  Rendering properties/show.html.erb within layouts/application
+  [1m[36mStation Load (0.2ms)[0m  [1m[34mSELECT "stations".* FROM "stations" WHERE "stations"."property_id" = ?[0m  [["property_id", 8]]
+  ↳ app/views/properties/show.html.erb:30:in `each_with_index'
+  Rendered properties/show.html.erb within layouts/application (Duration: 2.2ms | Allocations: 941)
+Completed 200 OK in 8ms (Views: 5.6ms | ActiveRecord: 0.4ms | Allocations: 3427)
+
+
+Started GET "/properties" for ::1 at 2023-01-21 13:46:13 +0900
+Processing by PropertiesController#index as HTML
+  Rendering properties/index.html.erb within layouts/application
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ app/views/properties/index.html.erb:18
+  Rendered properties/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1851)
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.2ms | Allocations: 3812)
+
+
+Started GET "/properties/8/edit" for ::1 at 2023-01-21 13:46:15 +0900
+Processing by PropertiesController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:64:in `set_property'
+  Rendering properties/edit.html.erb within layouts/application
+  [1m[36mStation Load (0.2ms)[0m  [1m[34mSELECT "stations".* FROM "stations" WHERE "stations"."property_id" = ?[0m  [["property_id", 8]]
+  ↳ app/views/properties/_form.html.erb:42
+  Rendered properties/_form.html.erb (Duration: 4.0ms | Allocations: 2323)
+  Rendered properties/edit.html.erb within layouts/application (Duration: 4.4ms | Allocations: 2443)
+Completed 200 OK in 12ms (Views: 8.8ms | ActiveRecord: 0.4ms | Allocations: 4921)
+
+
+Started PATCH "/properties/8" for ::1 at 2023-01-21 13:46:23 +0900
+Processing by PropertiesController#update as HTML
+  Parameters: {"authenticity_token"=>"byUxhUZndBuEvzPH2VLw+AvZdueeTeSJ2+NsS27S0BuXRWrlwYMWZCL2glPy2E4LGiHqm3o31ZBcIZWazI+lhQ==", "property"=>{"name"=>"あいう", "rent"=>"3", "address"=>"東京", "old"=>"2", "remark"=>"とてもいい部屋だよ", "stations_attributes"=>{"0"=>{"line_name"=>"JR", "name"=>"東京", "minute"=>"2", "id"=>"13"}, "1"=>{"line_name"=>"", "name"=>"", "minute"=>"", "id"=>"14"}}}, "commit"=>"更新する", "id"=>"8"}
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:64:in `set_property'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/properties_controller.rb:42:in `block in update'
+  [1m[36mStation Load (0.6ms)[0m  [1m[34mSELECT "stations".* FROM "stations" WHERE "stations"."property_id" = ? AND "stations"."id" IN (?, ?)[0m  [["property_id", 8], ["id", 13], ["id", 14]]
+  ↳ app/controllers/properties_controller.rb:42:in `block in update'
+  [1m[36mProperty Update (0.7ms)[0m  [1m[33mUPDATE "properties" SET "remark" = ?, "updated_at" = ? WHERE "properties"."id" = ?[0m  [["remark", "とてもいい部屋だよ"], ["updated_at", "2023-01-21 04:46:23.809984"], ["id", 8]]
+  ↳ app/controllers/properties_controller.rb:42:in `block in update'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/properties_controller.rb:42:in `block in update'
+Redirected to http://localhost:3000/properties/8
+Completed 302 Found in 14ms (ActiveRecord: 2.5ms | Allocations: 5483)
+
+
+Started GET "/properties/8" for ::1 at 2023-01-21 13:46:23 +0900
+Processing by PropertiesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:64:in `set_property'
+  Rendering properties/show.html.erb within layouts/application
+  [1m[36mStation Load (0.2ms)[0m  [1m[34mSELECT "stations".* FROM "stations" WHERE "stations"."property_id" = ?[0m  [["property_id", 8]]
+  ↳ app/views/properties/show.html.erb:30:in `each_with_index'
+  Rendered properties/show.html.erb within layouts/application (Duration: 2.9ms | Allocations: 944)
+Completed 200 OK in 8ms (Views: 6.1ms | ActiveRecord: 0.5ms | Allocations: 3449)
+
+
+Started GET "/properties" for ::1 at 2023-01-21 13:46:25 +0900
+Processing by PropertiesController#index as HTML
+  Rendering properties/index.html.erb within layouts/application
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ app/views/properties/index.html.erb:18
+  Rendered properties/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1844)
+Completed 200 OK in 10ms (Views: 8.5ms | ActiveRecord: 0.2ms | Allocations: 3802)
+
+
+Started GET "/properties/8" for ::1 at 2023-01-21 13:46:32 +0900
+Processing by PropertiesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:64:in `set_property'
+  Rendering properties/show.html.erb within layouts/application
+  [1m[36mStation Load (0.2ms)[0m  [1m[34mSELECT "stations".* FROM "stations" WHERE "stations"."property_id" = ?[0m  [["property_id", 8]]
+  ↳ app/views/properties/show.html.erb:30:in `each_with_index'
+  Rendered properties/show.html.erb within layouts/application (Duration: 2.4ms | Allocations: 942)
+Completed 200 OK in 9ms (Views: 6.0ms | ActiveRecord: 0.4ms | Allocations: 3421)
+
+
