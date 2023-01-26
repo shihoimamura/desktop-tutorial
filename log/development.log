@@ -1,0 +1,349 @@
+Started GET "/" for ::1 at 2023-01-21 16:48:08 +0900
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (6.0.3) lib/active_record/migration.rb:586:in `check_pending!'
+activerecord (6.0.3) lib/active_record/migration.rb:564:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (5.4.3) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.8) lib/puma/configuration.rb:228:in `call'
+puma (4.3.8) lib/puma/server.rb:718:in `handle_request'
+puma (4.3.8) lib/puma/server.rb:472:in `process_client'
+puma (4.3.8) lib/puma/server.rb:328:in `block in run'
+puma (4.3.8) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2023-01-21 16:48:10 +0900
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (6.0.3) lib/active_record/migration.rb:586:in `check_pending!'
+activerecord (6.0.3) lib/active_record/migration.rb:564:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (5.4.3) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.8) lib/puma/configuration.rb:228:in `call'
+puma (4.3.8) lib/puma/server.rb:718:in `handle_request'
+puma (4.3.8) lib/puma/server.rb:472:in `process_client'
+puma (4.3.8) lib/puma/server.rb:328:in `block in run'
+puma (4.3.8) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2023-01-21 16:48:11 +0900
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (6.0.3) lib/active_record/migration.rb:586:in `check_pending!'
+activerecord (6.0.3) lib/active_record/migration.rb:564:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (5.4.3) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.8) lib/puma/configuration.rb:228:in `call'
+puma (4.3.8) lib/puma/server.rb:718:in `handle_request'
+puma (4.3.8) lib/puma/server.rb:472:in `process_client'
+puma (4.3.8) lib/puma/server.rb:328:in `block in run'
+puma (4.3.8) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateProperties (20230120092034)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "properties" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "rent" integer, "address" varchar, "old" integer, "remark" text, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230120092034"]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateStations (20230120092134)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "stations" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "line_name" varchar, "name" varchar, "minute" integer, "property_id" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230120092134"]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-01-21 07:49:25.728180"], ["updated_at", "2023-01-21 07:49:25.728180"]]
+  [1m[35m (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2023-01-21 16:50:03 +0900
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PropertiesController#index as HTML
+  Rendering properties/index.html.erb within layouts/application
+  [1m[36mProperty Load (0.1ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ app/views/properties/index.html.erb:18
+  Rendered properties/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 2081)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+yarn run v1.22.19
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+
+
+error Command "webpack" not found.
+
+Completed 500 Internal Server Error in 728ms (ActiveRecord: 0.2ms | Allocations: 28577)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application.js in /Users/shihoimamura/Documents/GitHub/desktop-tutorial/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+    12:   <body>
+  
+app/views/layouts/application.html.erb:9
+Started GET "/" for ::1 at 2023-01-21 16:53:10 +0900
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PropertiesController#index as HTML
+  Rendering properties/index.html.erb within layouts/application
+  [1m[36mProperty Load (0.1ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ app/views/properties/index.html.erb:18
+  Rendered properties/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 2081)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 10.1ms | ActiveRecord: 0.3ms | Allocations: 15421)
+
+
+Started GET "/properties/new" for ::1 at 2023-01-21 16:53:17 +0900
+Processing by PropertiesController#new as HTML
+  Rendering properties/new.html.erb within layouts/application
+  Rendered properties/_form.html.erb (Duration: 6.5ms | Allocations: 3353)
+  Rendered properties/new.html.erb within layouts/application (Duration: 7.0ms | Allocations: 3753)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 48ms (Views: 10.9ms | ActiveRecord: 1.2ms | Allocations: 24037)
+
+
+Started POST "/properties" for ::1 at 2023-01-21 16:53:47 +0900
+Processing by PropertiesController#create as HTML
+  Parameters: {"authenticity_token"=>"jI4eQHK1Pj4PM/O5gkXKJ7F13eJQcsx9S+rJUPKI0PRDPd1jOK6gFgyL+PXnpqua3LxIKXLZYMT9v6RTN7WUZA==", "property"=>{"name"=>"ほほほ", "rent"=>"1", "address"=>"東京", "old"=>"1", "remark"=>"いい家だ", "stations_attributes"=>{"0"=>{"line_name"=>"JR", "name"=>"東京", "minute"=>""}, "1"=>{"line_name"=>"", "name"=>"", "minute"=>""}}}, "commit"=>"登録する"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/properties_controller.rb:29:in `block in create'
+  [1m[36mProperty Create (0.4ms)[0m  [1m[32mINSERT INTO "properties" ("name", "rent", "address", "old", "remark", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "ほほほ"], ["rent", 1], ["address", "東京"], ["old", 1], ["remark", "いい家だ"], ["created_at", "2023-01-21 07:53:47.047177"], ["updated_at", "2023-01-21 07:53:47.047177"]]
+  ↳ app/controllers/properties_controller.rb:29:in `block in create'
+  [1m[36mStation Create (0.1ms)[0m  [1m[32mINSERT INTO "stations" ("line_name", "name", "property_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["line_name", "JR"], ["name", "東京"], ["property_id", 1], ["created_at", "2023-01-21 07:53:47.049082"], ["updated_at", "2023-01-21 07:53:47.049082"]]
+  ↳ app/controllers/properties_controller.rb:29:in `block in create'
+  [1m[36mStation Create (0.0ms)[0m  [1m[32mINSERT INTO "stations" ("line_name", "name", "property_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["line_name", ""], ["name", ""], ["property_id", 1], ["created_at", "2023-01-21 07:53:47.049890"], ["updated_at", "2023-01-21 07:53:47.049890"]]
+  ↳ app/controllers/properties_controller.rb:29:in `block in create'
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/properties_controller.rb:29:in `block in create'
+Redirected to http://localhost:3000/properties/1
+Completed 302 Found in 21ms (ActiveRecord: 1.1ms | Allocations: 7549)
+
+
+Started GET "/properties/1" for ::1 at 2023-01-21 16:53:47 +0900
+Processing by PropertiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProperty Load (0.1ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:64:in `set_property'
+  Rendering properties/show.html.erb within layouts/application
+  [1m[36mStation Load (0.1ms)[0m  [1m[34mSELECT "stations".* FROM "stations" WHERE "stations"."property_id" = ?[0m  [["property_id", 1]]
+  ↳ app/views/properties/show.html.erb:30:in `each_with_index'
+  Rendered properties/show.html.erb within layouts/application (Duration: 11.0ms | Allocations: 5411)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 17.3ms | ActiveRecord: 0.3ms | Allocations: 11024)
+
+
+Started GET "/properties" for ::1 at 2023-01-21 16:53:50 +0900
+Processing by PropertiesController#index as HTML
+  Rendering properties/index.html.erb within layouts/application
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ app/views/properties/index.html.erb:18
+  Rendered properties/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 869)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.2ms | Allocations: 4861)
+
+
+Started GET "/properties/1" for ::1 at 2023-01-21 16:53:57 +0900
+Processing by PropertiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:64:in `set_property'
+  Rendering properties/show.html.erb within layouts/application
+  [1m[36mStation Load (0.2ms)[0m  [1m[34mSELECT "stations".* FROM "stations" WHERE "stations"."property_id" = ?[0m  [["property_id", 1]]
+  ↳ app/views/properties/show.html.erb:30:in `each_with_index'
+  Rendered properties/show.html.erb within layouts/application (Duration: 3.3ms | Allocations: 916)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 13.6ms | ActiveRecord: 0.5ms | Allocations: 5389)
+
+
+Started GET "/properties" for ::1 at 2023-01-21 16:53:59 +0900
+Processing by PropertiesController#index as HTML
+  Rendering properties/index.html.erb within layouts/application
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ app/views/properties/index.html.erb:18
+  Rendered properties/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 834)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.2ms | Allocations: 4741)
+
+
+Started GET "/properties/1/edit" for ::1 at 2023-01-21 16:54:00 +0900
+Processing by PropertiesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:64:in `set_property'
+  Rendering properties/edit.html.erb within layouts/application
+  [1m[36mStation Load (0.3ms)[0m  [1m[34mSELECT "stations".* FROM "stations" WHERE "stations"."property_id" = ?[0m  [["property_id", 1]]
+  ↳ app/views/properties/_form.html.erb:42
+  Rendered properties/_form.html.erb (Duration: 6.6ms | Allocations: 2520)
+  Rendered properties/edit.html.erb within layouts/application (Duration: 7.9ms | Allocations: 2809)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 16.1ms | ActiveRecord: 0.4ms | Allocations: 7586)
+
+
+Started GET "/properties" for ::1 at 2023-01-21 16:54:06 +0900
+Processing by PropertiesController#index as HTML
+  Rendering properties/index.html.erb within layouts/application
+  [1m[36mProperty Load (0.3ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ app/views/properties/index.html.erb:18
+  Rendered properties/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 931)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.3ms | Allocations: 4907)
+
+
+Started DELETE "/properties/1" for ::1 at 2023-01-21 16:54:15 +0900
+Processing by PropertiesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"xko+3A1b/ePtlwv/Z7NRYaINr3FS/vCbarxX/MeCcTyIfzUQJyuCp+Ponwdqvws8iv3vPOpiy5PhE1xeADoGdg==", "id"=>"1"}
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties" WHERE "properties"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/properties_controller.rb:64:in `set_property'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/properties_controller.rb:54:in `destroy'
+  [1m[36mStation Load (0.2ms)[0m  [1m[34mSELECT "stations".* FROM "stations" WHERE "stations"."property_id" = ?[0m  [["property_id", 1]]
+  ↳ app/controllers/properties_controller.rb:54:in `destroy'
+  [1m[36mStation Destroy (0.8ms)[0m  [1m[31mDELETE FROM "stations" WHERE "stations"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/properties_controller.rb:54:in `destroy'
+  [1m[36mStation Destroy (0.2ms)[0m  [1m[31mDELETE FROM "stations" WHERE "stations"."id" = ?[0m  [["id", 2]]
+  ↳ app/controllers/properties_controller.rb:54:in `destroy'
+  [1m[36mProperty Destroy (0.2ms)[0m  [1m[31mDELETE FROM "properties" WHERE "properties"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/properties_controller.rb:54:in `destroy'
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/properties_controller.rb:54:in `destroy'
+Redirected to http://localhost:3000/properties
+Completed 302 Found in 14ms (ActiveRecord: 2.5ms | Allocations: 6127)
+
+
+Started GET "/properties" for ::1 at 2023-01-21 16:54:15 +0900
+Processing by PropertiesController#index as HTML
+  Rendering properties/index.html.erb within layouts/application
+  [1m[36mProperty Load (0.2ms)[0m  [1m[34mSELECT "properties".* FROM "properties"[0m
+  ↳ app/views/properties/index.html.erb:18
+  Rendered properties/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 651)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.2ms | Allocations: 4565)
+
+
+Started GET "/properties/new" for ::1 at 2023-01-21 16:54:20 +0900
+Processing by PropertiesController#new as HTML
+  Rendering properties/new.html.erb within layouts/application
+  Rendered properties/_form.html.erb (Duration: 2.0ms | Allocations: 1295)
+  Rendered properties/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1384)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.0ms | Allocations: 5615)
+
+
