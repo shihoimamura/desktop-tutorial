@@ -19,6 +19,7 @@ class PropertiesController < ApplicationController
 
   # GET /properties/1/edit
   def edit
+    @property.stations.new
   end
 
   # POST /properties or /properties.json
